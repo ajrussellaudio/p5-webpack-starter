@@ -1,11 +1,16 @@
 import "p5";
+import "./main.css";
+
+// window.preload = () => {
+//   // preload images etc here
+// }
 
 window.setup = () => {
-  createCanvas(640, 480);
-  background("red");
+  createCanvas(window.innerWidth, window.innerHeight);
 };
 
 window.draw = () => {
+  background("blue");
   if (mouseIsPressed) {
     fill(0);
   } else {
